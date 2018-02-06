@@ -17,6 +17,7 @@ security:
             http_basic: ~
             #TODO: add form_login auth
             #TODO: add token_login auth
+
     access_control:
         # require ROLE_ADMIN for /admin*
         - { path: ^/, roles: ROLE_USER }

@@ -1,12 +1,15 @@
-#Basic symfony 4 start up project
+#Symfony 4 start up app
 
-TODO: update this file
+####TODO: update this file
+
+## Require
+1. install yarn -> https://yarnpkg.com/lang/en/docs/install/
 
 ## Setup
-composer install
-yarn install
+1. composer install
+2. yarn install
 
 ## Build assets commands
- yarn run encore dev
- yarn run encore dev --watch
- yarn run encore production
+1. yarn run encore dev
+2. yarn run encore dev --watch
+3. yarn run encore production

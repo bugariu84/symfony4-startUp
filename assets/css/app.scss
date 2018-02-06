@@ -6,4 +6,15 @@ $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 // $fa-font-path: "~font-awesome/fonts";
 
 // the ~ allows you to reference things in node_modules
-@import '~bootstrap-sass/assets/stylesheets/bootstrap';
+@import '~bootstrap/dist/css/bootstrap.css'; // bootstrap4
+
+//keep this commented until v4 scss is out
+//@import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+body {
+  padding-top: 5rem;
+}
+
+main {
+  text-align: center;
+}
