@@ -1,0 +1,33 @@
+security:
+    # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
+    providers:
+        in_memory:
+            memory:
+              users:
+                bbugariu:
+                  password: 123
+                  roles: 'ROLE_USER'
+        #TODO: add chain provider with 'in_memory, user_db, and mby a google/facbook provider'
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+        main:
+            anonymous: ~
+            http_basic: ~
+            #TODO: add form_login auth
+            #TODO: add token_login auth
+    access_control:
+        # require ROLE_ADMIN for /admin*
+        - { path: ^/, roles: ROLE_USER }
+    encoders:
+        Symfony\Component\Security\Core\User\User: plaintext
+
+
+            # activate different ways to authenticate
+
+            # http_basic: ~
+            # https://symfony.com/doc/current/security.html#a-configuring-how-your-users-will-authenticate
+
+            # form_login: ~
+            # https://symfony.com/doc/current/security/form_login_setup.html
