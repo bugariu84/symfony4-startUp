@@ -26,3 +26,5 @@ public/build
 
 # yarn/npm
 node_modules/*
+
+.env
