@@ -1,6 +1,6 @@
-##Symfony 4 start up app
+# Symfony 4 start up app
 
-###TODO: update this file
+## TODO: update this file
 
 ## Require
 1. install yarn -> https://yarnpkg.com/lang/en/docs/install/
