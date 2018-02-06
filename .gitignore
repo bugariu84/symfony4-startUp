@@ -36,6 +36,7 @@
 /phpunit.xml
 
 # Build data
+public/build
 /build/
 
 # Composer PHAR
@@ -49,3 +50,6 @@
 
 # PhpStorm stuff
 .idea
+
+# yarn/npm
+node_modules/*
